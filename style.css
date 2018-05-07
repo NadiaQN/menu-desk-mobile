@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+}
+
+/* estilos nav */
+
+.nav { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    display: inline;
+    margin: 2em;
+    max-width: 9em;
+}
+
+/* estilos menu mobile */
+
+.mobile {
+    list-style: none;
+    text-align: left;
+    padding: 0;   
+}
+.mobile li {
+    max-width: 18em;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 1em;
+}
+
+.mobile a {
+    color: #000;
+}
+
+.mobile li:hover {
+    background-color: #2E64FE;
+}
+
+.mobile li:active {
+    background-color: #2E64FE;
+}
+
+/* estilos modal menu mobile */
+.modal {
+    background-color: #fff;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-dialog {
+    max-width: 100%;
+    margin-top: 0;
+}
+.modal-content {
+    border: 0;  
+}
