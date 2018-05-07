@@ -89,6 +89,7 @@ strong{
       position: fixed;
       border-bottom: 1px solid #EEEEEE;
       width: 100%;
+      z-index: 10;
     }
     .row{
       height: 100%;
@@ -160,11 +161,12 @@ strong{
       transform: translateX(270px);
       transition: transform 250ms cubic-bezier(0.19, 1, 0.22, 1);
     }
-    .close-icon{
+    .close-menu-side{
       background: url(./img/2015-iconos-grandes-blancos-sinbola.png) -98px 3px #0079C8;
       height: 40px;
       width: 40px;
       border-radius: 50%;
       margin: 10px;
+      cursor: pointer;
     }
 }
