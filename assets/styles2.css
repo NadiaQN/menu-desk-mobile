@@ -1,0 +1,170 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+.row{
+    width: 1140px;
+    height: 120px;
+    margin: 0 135.5px;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    height: 100px;
+    display: block;
+}
+img{
+  width: 100%;
+}
+#menu-movil{
+  display: none;
+}
+#nav-home{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    max-width: 790px;
+}
+#nav-home ul li a{
+    display: block;
+    height: 60px;
+    width: 140px;
+    padding: 10px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1b1b1b;
+    text-decoration: none;
+    line-height: 20px;
+    text-align: center;
+}
+#nav-home ul li:first-child a{
+    width: 65px;
+}
+#nav-home ul li a:hover{
+    color: #FFF;
+    background-color: #0079C8;
+    border-color: #0079C8;
+    text-decoration: none !important;
+}
+
+li{
+    float: left;
+    list-style: none;
+}
+.submenu{
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    min-width: 790px;
+    padding: 15px;
+    background-color: #0079C8;
+}
+.submenu li{
+    float: none;
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px 5px 20px;
+    width: 23%;
+}
+.submenu a{
+    color: rgb(131, 202, 250) !important;
+    display: inline-block;
+    font: 15px Arial;
+    padding: 5px 10px;
+}
+strong{
+    color: #FFF;
+}
+.submenu a:hover{
+    background-color: #00335B;
+}
+
+@media only screen and (max-width: 990px) {
+    header{
+      position: fixed;
+      border-bottom: 1px solid #EEEEEE;
+      width: 100%;
+    }
+    .row{
+      height: 100%;
+      margin: 0;
+    }
+    #logo{
+      width: 68px;
+      height: auto;
+      position: relative;
+      top: 15px;
+    }
+    form{
+      position: fixed;
+      top: 0;
+      padding: 10px 59px 5px 10px;
+    }
+    #search{
+      height: 40px;
+      border: 1px solid #D8D9D9;
+      border-radius: 20px;
+      background-color: #F6F4F0;
+      margin-bottom: 5px;
+      padding: 5px;
+      box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+    }
+    #search-button{
+      background: url(./img/2015-iconos-grandes-blancos-sinbola.png) -199px -197px #0079C8;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      text-indent: -9999px;
+    }
+    span{
+      float: left;
+      width: 60px;
+      height: 60px;
+      background: url(./img/mobile-nav.png);
+      border-right: 1px solid #EEEEEE;
+    }
+    #menu-movil{
+      padding-top: 60px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    #menu-movil ul{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    #menu-movil ul li{
+      border-top: 1px solid #EEEEEE;
+      float: none;
+    }
+    #menu-movil ul li a{
+      padding: 15px;
+      color: #000000;
+      display: block;
+      text-decoration: none;
+    }
+    #menu-movil ul li a:hover, #menu-movil ul li a:active{
+      background-color: #00335B;
+      color: #EEEEEE;
+    }
+    header .row nav{
+      display: none;
+    }
+    .active{
+      transform: translateX(270px);
+      transition: transform 250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .close-icon{
+      background: url(./img/2015-iconos-grandes-blancos-sinbola.png) -98px 3px #0079C8;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+}
