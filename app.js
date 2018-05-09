@@ -9,18 +9,10 @@ $('.item').mouseenter(function() {
 
 // Funciones efectos mobile
 
-$('.close-menu-side').click(function(){
-  console.log('kol')
-  $('span').removeClass('close-menu-side')
-  $('header').removeClass('active')
-  $('span').addClass('menu-bar')
-  $('#menu-movil').hide()
-})
 
 $('.menu-bar').click(function(){
-  $('header').addClass('active')
-  $('span').addClass('close-menu-side')
-  $('span').removeClass('menu-bar')
-  $('#menu-movil').show()
+  $('header').toggleClass('menu_active')
+  $('#menu-movil').toggleClass('menu_block')
+  //$('.lorem').toggleClass('active')
 })
 
